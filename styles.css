@@ -32,6 +32,8 @@
 .nav-container{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:700}
 .brand-logo{width:28px;height:28px}
+/* Make dark logo visible on dark header */
+.site-header .brand-logo{filter:brightness(0) invert(1)}
 .brand-name{font-family:"Space Grotesk",Inter,sans-serif;font-weight:700}
 .nav-list{display:flex;align-items:center;gap:18px;list-style:none;margin:0;padding:0}
 .nav-list a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:8px}
@@ -118,6 +120,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(0,229,255
   --muted:#5b647a;
   --border:rgba(10,16,32,.12);
 }
+[data-theme="light"] .site-header .brand-logo{filter:none}
 [data-theme="light"] body{
   background: radial-gradient(1200px 600px at 20% -10%, rgba(106,92,255,.10), transparent 60%),
               radial-gradient(1400px 700px at 120% 10%, rgba(0,229,255,.10), transparent 50%),
