@@ -126,3 +126,5 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(0,229,255
               radial-gradient(1400px 700px at 120% 10%, rgba(0,229,255,.10), transparent 50%),
               var(--bg);
 }
+
+/* Chat Widget removed */

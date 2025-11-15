@@ -41,7 +41,10 @@
           <li><a href="#contact" class="btn btn-neon">Partner With Us</a></li>
         </ul>
       </nav>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="langToggle" class="btn btn-ghost" aria-label="Toggle language">EN</button>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+      </div>
     </div>
   </header>
 
@@ -50,16 +53,16 @@
     <section class="hero section" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <h1 id="hero-title" class="display">Your B2B Digital Marketplace Partner</h1>
-          <p class="lead">Irvantra Technologies Inc helps resellers, communities, and companies distribute game top-ups, vouchers, and other digital services—reliably and competitively.</p>
+          <h1 id="hero-title" class="display" data-i18n="hero.title">Your B2B Digital Marketplace Partner</h1>
+          <p class="lead" data-i18n="hero.lead">Irvantra Technologies Inc helps resellers, communities, and companies distribute game top-ups, vouchers, and other digital services—reliably and competitively.</p>
           <div class="hero-ctas">
-            <a href="#featured" class="btn btn-primary">Browse Marketplace</a>
-            <a href="#contact" class="btn btn-ghost">Partner With Us</a>
+            <a href="#featured" class="btn btn-primary" data-i18n="hero.ctaBrowse">Browse Marketplace</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaPartner">Partner With Us</a>
           </div>
           <ul class="hero-highlights">
-            <li><img src="assets/icon-shield.svg" alt="Trust" /> Trusted by B2B Partners</li>
-            <li><img src="assets/icon-bolt.svg" alt="Fast" /> Fast & Organized Processes</li>
-            <li><img src="assets/icon-users.svg" alt="Support" /> Responsive Support</li>
+            <li><img src="assets/icon-shield.svg" alt="Trust" /> <span data-i18n="hero.h1">Trusted by B2B Partners</span></li>
+            <li><img src="assets/icon-bolt.svg" alt="Fast" /> <span data-i18n="hero.h2">Fast & Organized Processes</span></li>
+            <li><img src="assets/icon-users.svg" alt="Support" /> <span data-i18n="hero.h3">Responsive Support</span></li>
           </ul>
         </div>
         <div class="hero-visual reveal">
@@ -76,8 +79,8 @@
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="container two-col">
         <div class="reveal">
-          <h2 id="about-title">About Irvantra Technologies Inc</h2>
-          <p>Irvantra Technologies Inc is a B2B digital marketplace that helps business partners distribute digital products—ranging from game top-ups to vouchers—with a simple process and professional support.</p>
+          <h2 id="about-title" data-i18n="about.title">About Irvantra Technologies Inc</h2>
+          <p data-i18n="about.body">Irvantra Technologies Inc is a B2B digital marketplace that helps business partners distribute digital products—ranging from game top-ups to vouchers—with a simple process and professional support.</p>
           <div class="stats-grid">
             <div class="stat">
               <span class="stat-value">300+</span>
@@ -116,37 +119,39 @@
     <!-- Services Section -->
     <section id="services" class="section" aria-labelledby="services-title">
       <div class="container">
-        <h2 id="services-title" class="section-title">Our Services</h2>
+        <h2 id="services-title" class="section-title" data-i18n="services.title">Our Services</h2>
         <div class="card-grid">
           <article class="card reveal">
             <img src="assets/icon-globe.svg" alt="Marketplace" class="card-icon" />
-            <h3>Digital Game & Voucher Marketplace</h3>
-            <p>Access a broad catalog of games and popular vouchers at competitive prices to support your sales.</p>
+            <h3 data-i18n="services.s1.title">Digital Game & Voucher Marketplace</h3>
+            <p data-i18n="services.s1.desc">Access a broad catalog of games and popular vouchers at competitive prices to support your sales.</p>
           </article>
           <article class="card reveal">
             <img src="assets/icon-handshake.svg" alt="B2B" class="card-icon" />
-            <h3>B2B Distribution</h3>
-            <p>Digital product distribution for resellers, communities, and companies with an organized process.</p>
+            <h3 data-i18n="services.s2.title">B2B Distribution</h3>
+            <p data-i18n="services.s2.desc">Digital product distribution for resellers, communities, and companies with an organized process.</p>
           </article>
           <article class="card reveal">
             <img src="assets/icon-voucher.svg" alt="Brand" class="card-icon" />
-            <h3>White-label & Branding Partner</h3>
-            <p>Your own label with brand assets and campaign support—ready to launch.</p>
+            <h3 data-i18n="services.s3.title">White-label & Branding Partner</h3>
+            <p data-i18n="services.s3.desc">Your own label with brand assets and campaign support—ready to launch.</p>
           </article>
           <article class="card reveal">
             <img src="assets/icon-users.svg" alt="Custom" class="card-icon" />
-            <h3>Custom Collaboration</h3>
-            <p>Tailored collaboration—from product curation to the agreed operational flow.</p>
+            <h3 data-i18n="services.s4.title">Custom Collaboration</h3>
+            <p data-i18n="services.s4.desc">Tailored collaboration—from product curation to the agreed operational flow.</p>
           </article>
           <article class="card reveal">
-            <img src="assets/icon-cloud.svg" alt="API" class="card-icon" />
-            <h3>API Integration & Automation</h3>
-            <p>Simple API and webhooks to automate orders, stock sync, and delivery callbacks.</p>
+            <img src="assets/icon-handshake.svg" alt="Reseller" class="card-icon" />
+            <h3 data-i18n="services.s5.title">Local Reseller Support</h3>
+            <p data-i18n="services.s5.desc">Tailored program for local resellers: competitive pricing, steady stock, promo materials, and sales enablement.</p>
+            <p><a class="btn btn-ghost" href="#contact" aria-label="Contact us about the local reseller program" data-i18n="services.s5.cta">Join as Reseller</a></p>
           </article>
           <article class="card reveal">
             <img src="assets/icon-star.svg" alt="Support" class="card-icon" />
-            <h3>Partner Onboarding & Support</h3>
-            <p>Dedicated onboarding, playbooks, and SLA-backed support to help you scale.</p>
+            <h3 data-i18n="services.s6.title">Partner Onboarding & Support</h3>
+            <p data-i18n="services.s6.desc">Dedicated onboarding, playbooks, and SLA-backed support to help you scale.</p>
+            <p><a class="btn btn-ghost" href="#contact" aria-label="Go to contact form for onboarding" data-i18n="services.s6.cta">Contact Us</a></p>
           </article>
         </div>
       </div>
@@ -155,14 +160,14 @@
     <!-- Why Choose Us -->
     <section id="why" class="section" aria-labelledby="why-title">
       <div class="container">
-        <h2 id="why-title" class="section-title">Why Choose Irvantra</h2>
+        <h2 id="why-title" class="section-title" data-i18n="why.title">Why Choose Irvantra</h2>
         <div class="why-grid">
-          <div class="why-item reveal"><img src="assets/icon-bolt.svg" alt="Fast" /><span>Fast & secure transactions</span></div>
-          <div class="why-item reveal"><img src="assets/icon-lock.svg" alt="Protected" /><span>Protected transactions</span></div>
-          <div class="why-item reveal"><img src="assets/icon-controller.svg" alt="Games" /><span>Multi-game & platform support</span></div>
-          <div class="why-item reveal"><img src="assets/icon-users.svg" alt="Users" /><span>Trusted by thousands</span></div>
-          <div class="why-item reveal"><img src="assets/icon-cloud.svg" alt="Consistent" /><span>Consistent processes</span></div>
-          <div class="why-item reveal"><img src="assets/icon-star.svg" alt="Support" /><span>Partner enablement</span></div>
+          <div class="why-item reveal"><img src="assets/icon-bolt.svg" alt="Fast" /><span data-i18n="why.i1">Fast & secure transactions</span></div>
+          <div class="why-item reveal"><img src="assets/icon-lock.svg" alt="Protected" /><span data-i18n="why.i2">Protected transactions</span></div>
+          <div class="why-item reveal"><img src="assets/icon-controller.svg" alt="Games" /><span data-i18n="why.i3">Multi-game & platform support</span></div>
+          <div class="why-item reveal"><img src="assets/icon-users.svg" alt="Users" /><span data-i18n="why.i4">Trusted by thousands</span></div>
+          <div class="why-item reveal"><img src="assets/icon-cloud.svg" alt="Consistent" /><span data-i18n="why.i5">Consistent processes</span></div>
+          <div class="why-item reveal"><img src="assets/icon-star.svg" alt="Support" /><span data-i18n="why.i6">Partner enablement</span></div>
         </div>
       </div>
     </section>
@@ -171,12 +176,12 @@
     <section id="featured" class="section" aria-labelledby="featured-title">
       <div class="container">
         <div class="featured-head">
-          <h2 id="featured-title" class="section-title">Featured Marketplace</h2>
+          <h2 id="featured-title" class="section-title" data-i18n="featured.title">Featured Marketplace</h2>
           <div class="tabs" role="tablist" aria-label="Game categories">
-            <button class="tab active" role="tab" aria-selected="true" data-filter="all">All</button>
-            <button class="tab" role="tab" aria-selected="false" data-filter="mobile">Mobile</button>
-            <button class="tab" role="tab" aria-selected="false" data-filter="pc">PC</button>
-            <button class="tab" role="tab" aria-selected="false" data-filter="console">Console</button>
+            <button class="tab active" role="tab" aria-selected="true" data-filter="all" data-i18n="featured.all">All</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="mobile" data-i18n="featured.mobile">Mobile</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="pc" data-i18n="featured.pc">PC</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="console" data-i18n="featured.console">Console</button>
           </div>
         </div>
         <div class="grid featured-grid">
@@ -217,7 +222,7 @@
     <!-- Testimonials -->
     <section id="testimonials" class="section" aria-labelledby="testimonials-title">
       <div class="container">
-        <h2 id="testimonials-title" class="section-title">What Our Partners Say</h2>
+        <h2 id="testimonials-title" class="section-title" data-i18n="testimonials.title">What Our Partners Say</h2>
         <div class="carousel" aria-roledescription="carousel">
           <button class="carousel-nav prev" aria-label="Previous testimonial"></button>
           <div class="carousel-track" role="group" aria-live="polite">
@@ -254,42 +259,43 @@
     <!-- Contact & Partnership -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title" class="section-title">Contact & Partnership</h2>
+        <h2 id="contact-title" class="section-title" data-i18n="contact.title">Contact & Partnership</h2>
         <div class="two-col">
-          <form class="contact-form glass" novalidate>
+          <form class="contact-form glass" id="contactForm" data-endpoint="https://formspree.io/f/YOUR_FORM_ID" novalidate>
             <div class="form-row">
               <div class="form-field">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required />
+                <label for="name" data-i18n="contact.name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" data-i18n-placeholder="contact.namePh" required />
               </div>
               <div class="form-field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="name@company.com" required />
+                <label for="email" data-i18n="contact.email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@company.com" data-i18n-placeholder="contact.emailPh" required />
               </div>
             </div>
             <div class="form-row">
               <div class="form-field">
-                <label for="company">Company</label>
-                <input id="company" name="company" type="text" placeholder="Company name" />
+                <label for="company" data-i18n="contact.company">Company</label>
+                <input id="company" name="company" type="text" placeholder="Company name" data-i18n-placeholder="contact.companyPh" />
               </div>
               <div class="form-field">
-                <label for="interest">I'm interested in</label>
+                <label for="interest" data-i18n="contact.interest">I'm interested in</label>
                 <select id="interest" name="interest">
-                  <option>Reseller Program</option>
-                  <option>B2B Distribution</option>
-                  <option>White-label & Branding</option>
-                  <option>Custom Collaboration</option>
+                  <option data-i18n="contact.opt1">Reseller Program</option>
+                  <option data-i18n="contact.opt2">B2B Distribution</option>
+                  <option data-i18n="contact.opt3">White-label & Branding</option>
+                  <option data-i18n="contact.opt4">Custom Collaboration</option>
                 </select>
               </div>
             </div>
             <div class="form-field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals..."></textarea>
+              <label for="message" data-i18n="contact.message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals..." data-i18n-placeholder="contact.messagePh"></textarea>
             </div>
             <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Request Partnership</button>
-              <p class="form-note">By submitting this form you agree to our privacy policy.</p>
+              <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Request Partnership</button>
+              <p class="form-note" data-i18n="contact.note">By submitting this form you agree to our privacy policy.</p>
             </div>
+            <p id="formStatus" class="form-note" role="status" aria-live="polite"></p>
           </form>
           <aside class="contact-aside reveal">
             <div class="contact-card">
@@ -310,6 +316,7 @@
       </div>
     </section>
   </main>
+
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-grid">
